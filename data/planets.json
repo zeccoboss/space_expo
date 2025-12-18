@@ -1,0 +1,42 @@
+[
+	{
+		"name": "Mercury",
+		"fact": "Closest planet to the Sun.",
+		"image": "assets/images/planets/mercury.png"
+	},
+	{
+		"name": "Venus",
+		"fact": "Hottest planet in the solar system.",
+		"image": "assets/images/planets/venus.png"
+	},
+	{
+		"name": "Earth",
+		"fact": "The only known planet with life.",
+		"image": "assets/images/planets/earth.png"
+	},
+	{
+		"name": "Mars",
+		"fact": "Known as the Red Planet.",
+		"image": "assets/images/planets/mars.png"
+	},
+	{
+		"name": "Jupiter",
+		"fact": "Largest planet in the solar system.",
+		"image": "assets/images/planets/jupiter.png"
+	},
+	{
+		"name": "Saturn",
+		"fact": "Famous for its rings.",
+		"image": "assets/images/planets/saturn.png"
+	},
+	{
+		"name": "Uranus",
+		"fact": "Rotates on its side.",
+		"image": "assets/images/planets/uranus.png"
+	},
+	{
+		"name": "Neptune",
+		"fact": "Strongest winds in the solar system.",
+		"image": "assets/images/planets/neptune.png"
+	}
+]

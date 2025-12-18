@@ -1,0 +1,166 @@
+[
+	{
+		"id": 1,
+		"name": "Apollo 11",
+		"year": 1969,
+		"agency": "NASA",
+		"type": "Manned Mission",
+		"description": "First successful human landing on the Moon.",
+		"image": "assets/images/missions/apollo-11.png"
+	},
+	{
+		"id": 2,
+		"name": "Apollo 13",
+		"year": 1970,
+		"agency": "NASA",
+		"type": "Manned Mission",
+		"description": "A failed Moon mission that became a survival success story.",
+		"image": "assets/images/missions/apollo-13.png"
+	},
+	{
+		"id": 3,
+		"name": "Voyager 1",
+		"year": 1977,
+		"agency": "NASA",
+		"type": "Space Probe",
+		"description": "Farthest human-made object, exploring interstellar space.",
+		"image": "assets/images/missions/voyager-1.png"
+	},
+	{
+		"id": 4,
+		"name": "Voyager 2",
+		"year": 1977,
+		"agency": "NASA",
+		"type": "Space Probe",
+		"description": "Only spacecraft to visit Uranus and Neptune.",
+		"image": "assets/images/missions/voyager-2.png"
+	},
+	{
+		"id": 5,
+		"name": "Curiosity Rover",
+		"year": 2012,
+		"agency": "NASA",
+		"type": "Mars Rover",
+		"description": "Studying Mars climate and geology.",
+		"image": "assets/images/missions/curiosity.png"
+	},
+	{
+		"id": 6,
+		"name": "Perseverance Rover",
+		"year": 2020,
+		"agency": "NASA",
+		"type": "Mars Rover",
+		"description": "Searching for signs of ancient life on Mars.",
+		"image": "assets/images/missions/perseverance.png"
+	},
+	{
+		"id": 7,
+		"name": "Spirit Rover",
+		"year": 2004,
+		"agency": "NASA",
+		"type": "Mars Rover",
+		"description": "Explored Martian surface for over six years.",
+		"image": "assets/images/missions/spirit.png"
+	},
+	{
+		"id": 8,
+		"name": "Opportunity Rover",
+		"year": 2004,
+		"agency": "NASA",
+		"type": "Mars Rover",
+		"description": "Operated nearly 15 years on Mars.",
+		"image": "assets/images/missions/opportunity.png"
+	},
+	{
+		"id": 9,
+		"name": "Hubble Space Telescope",
+		"year": 1990,
+		"agency": "NASA / ESA",
+		"type": "Space Telescope",
+		"description": "Revolutionized astronomy with deep-space imaging.",
+		"image": "assets/images/missions/hubble.png"
+	},
+	{
+		"id": 10,
+		"name": "James Webb Space Telescope",
+		"year": 2021,
+		"agency": "NASA / ESA / CSA",
+		"type": "Space Telescope",
+		"description": "Observing the earliest galaxies in the universe.",
+		"image": "assets/images/missions/jwst.png"
+	},
+	{
+		"id": 11,
+		"name": "Cassini–Huygens",
+		"year": 1997,
+		"agency": "NASA / ESA",
+		"type": "Planetary Orbiter",
+		"description": "Studied Saturn and its moons in detail.",
+		"image": "assets/images/missions/cassini.png"
+	},
+	{
+		"id": 12,
+		"name": "New Horizons",
+		"year": 2006,
+		"agency": "NASA",
+		"type": "Space Probe",
+		"description": "First mission to Pluto and the Kuiper Belt.",
+		"image": "assets/images/missions/new-horizons.png"
+	},
+	{
+		"id": 13,
+		"name": "Juno",
+		"year": 2011,
+		"agency": "NASA",
+		"type": "Planetary Orbiter",
+		"description": "Studying Jupiter's composition and gravity.",
+		"image": "assets/images/missions/juno.png"
+	},
+	{
+		"id": 14,
+		"name": "Mars Pathfinder",
+		"year": 1996,
+		"agency": "NASA",
+		"type": "Mars Lander",
+		"description": "Delivered the first Mars rover, Sojourner.",
+		"image": "assets/images/missions/pathfinder.png"
+	},
+
+	{
+		"id": 15,
+		"name": "Galileo",
+		"year": 1989,
+		"agency": "NASA",
+		"type": "Planetary Orbiter",
+		"description": "Studied Jupiter and its moons.",
+		"image": "assets/images/missions/galileo.png"
+	},
+	{
+		"id": 16,
+		"name": "Magellan",
+		"year": 1989,
+		"agency": "NASA",
+		"type": "Planetary Orbiter",
+		"description": "Mapped Venus using radar.",
+		"image": "assets/images/missions/magellan.png"
+	},
+	{
+		"id": 17,
+		"name": "Hayabusa2",
+		"year": 2014,
+		"agency": "JAXA",
+		"type": "Asteroid Mission",
+		"description": "Returned samples from asteroid Ryugu.",
+		"image": "assets/images/missions/hayabusa2.png"
+	},
+
+	{
+		"id": 18,
+		"name": "Sputnik 1",
+		"year": 1957,
+		"agency": "Soviet Union",
+		"type": "Satellite",
+		"description": "First artificial satellite launched into orbit.",
+		"image": "assets/images/missions/sputnik-1.png"
+	}
+]
