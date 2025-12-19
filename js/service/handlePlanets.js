@@ -1,6 +1,6 @@
-const getPlanets = async (path) => {
+const getPlanets = async () => {
 	try {
-		const data = await fetch(path);
+		const data = await fetch("/data/planets.json");
 		return await data.json();
 	} catch (error) {
 		console.error(error);
@@ -11,7 +11,7 @@ const getPlanets = async (path) => {
 const renderPlanets = async () => {
 	const planetSlides = document.getElementById("planet-content");
 
-	const planets = await getPlanets("../../data/planets.json");
+	const planets = await getPlanets();
 
 	planetSlides.innerHTML += planets
 		.map((planet, index) => {
