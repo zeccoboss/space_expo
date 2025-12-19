@@ -1,8 +1,8 @@
 const getRandomFacts = async (path) => {
 	try {
-		const data = await fetch(path);
 		const qq = await fetch("../a.json");
 		console.log(qq);
+		const data = await fetch(path);
 
 		return await data.json();
 	} catch (error) {
