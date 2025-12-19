@@ -16,13 +16,13 @@ const renderMissions = async () => {
 	missionsWrapper.innerHTML += missions
 		.map((mission, index) => {
 			return `
-			<div class="mission_card" id="mission-${`${mission.name}-${
+			<li class="mission_card" id="mission-${`${mission.name}-${
 				index + mission.id
 			}`}">
 				<figure class="mission_img_wrapper">
 					<img
 						src="${mission.image}"
-						alt="${mission.fact}"
+						alt="${mission.name}"
 						srcset=""
 						id="mission-${mission.name}"
 						class="mission_img"
@@ -39,7 +39,7 @@ const renderMissions = async () => {
 				<p class="mission_agency">Agency: ${mission.agency}</p>
 				<p class="mission_type">Type: ${mission.type}</p>
 				<p class="mission_description">Description: ${mission.description}</p>
-			</div>
+			</li>
 		`;
 		})
 		.join("");

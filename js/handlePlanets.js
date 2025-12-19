@@ -16,11 +16,11 @@ const renderPlanets = async () => {
 	planetSlides.innerHTML += planets
 		.map((planet, index) => {
 			return `
-			<div class="planet_card" id="planet-${`${planet.name}-${index}`}">
+			<li class="planet_card" id="planet-${`${planet.name}-${index}`}">
 				<figure class="planet_img_wrapper">
 					<img
 						src="${planet.image}"
-						alt="${planet.fact}"
+						alt="${planet.name}"
 						srcset=""
 						id="planet-${planet.name}"
 						class="planet_img"
@@ -32,7 +32,7 @@ const renderPlanets = async () => {
 				</figure>
 				<h3 class="planet_name">${planet.name}</h3>
 				<small class="planet_fact">${planet.fact}</small>
-			</div>
+			</li>
 		`;
 		})
 		.join("");
