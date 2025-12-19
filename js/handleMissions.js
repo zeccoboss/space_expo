@@ -1,6 +1,6 @@
 const getMissions = async (path) => {
 	try {
-		const data = await fetch("../../data/missions.json");
+		const data = await fetch(path);
 		return await data.json();
 	} catch (error) {
 		console.error(error);
@@ -8,7 +8,7 @@ const getMissions = async (path) => {
 	}
 };
 
-const path = "../../data/missions.json";
+const path = "../json/missions.json";
 
 const renderMissions = async () => {
 	const missionsWrapper = document.getElementById("mission-content");
