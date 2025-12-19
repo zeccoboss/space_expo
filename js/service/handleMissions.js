@@ -11,7 +11,7 @@ const getMissions = async (path) => {
 const renderMissions = async () => {
 	const missionsWrapper = document.getElementById("mission-content");
 
-	const missions = await getMissions("./data/missions.json");
+	const missions = await getMissions("json/missions.json");
 
 	missionsWrapper.innerHTML += missions
 		.map((mission, index) => {
