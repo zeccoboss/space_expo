@@ -1,6 +1,6 @@
 const getRandomFacts = async (path) => {
 	try {
-		const data = await fetch(path);
+		const data = await fetch("json/planets.json");
 		return await data.json();
 	} catch (error) {
 		console.error(error);
