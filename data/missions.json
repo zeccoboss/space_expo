@@ -6,7 +6,7 @@
 		"agency": "NASA",
 		"type": "Manned Mission",
 		"description": "First successful human landing on the Moon.",
-		"image": "assets/images/missions/apollo-11.png"
+		"image": "assets/images/missions/apollo-11.jpg"
 	},
 	{
 		"id": 2,
@@ -15,7 +15,7 @@
 		"agency": "NASA",
 		"type": "Manned Mission",
 		"description": "A failed Moon mission that became a survival success story.",
-		"image": "assets/images/missions/apollo-13.png"
+		"image": "assets/images/missions/apollo-13.jpg"
 	},
 	{
 		"id": 3,
@@ -24,7 +24,7 @@
 		"agency": "NASA",
 		"type": "Space Probe",
 		"description": "Farthest human-made object, exploring interstellar space.",
-		"image": "assets/images/missions/voyager-1.png"
+		"image": "assets/images/missions/voyager-1.jpg"
 	},
 	{
 		"id": 4,
@@ -33,7 +33,7 @@
 		"agency": "NASA",
 		"type": "Space Probe",
 		"description": "Only spacecraft to visit Uranus and Neptune.",
-		"image": "assets/images/missions/voyager-2.png"
+		"image": "assets/images/missions/voyager-2.jpg"
 	},
 	{
 		"id": 5,
@@ -42,7 +42,7 @@
 		"agency": "NASA",
 		"type": "Mars Rover",
 		"description": "Studying Mars climate and geology.",
-		"image": "assets/images/missions/curiosity.png"
+		"image": "assets/images/missions/curiosity.jpg"
 	},
 	{
 		"id": 6,
@@ -51,7 +51,7 @@
 		"agency": "NASA",
 		"type": "Mars Rover",
 		"description": "Searching for signs of ancient life on Mars.",
-		"image": "assets/images/missions/perseverance.png"
+		"image": "assets/images/missions/perseverance.jpg"
 	},
 	{
 		"id": 7,
@@ -60,7 +60,7 @@
 		"agency": "NASA",
 		"type": "Mars Rover",
 		"description": "Explored Martian surface for over six years.",
-		"image": "assets/images/missions/spirit.png"
+		"image": "assets/images/missions/spirit.jpg"
 	},
 	{
 		"id": 8,
@@ -69,7 +69,7 @@
 		"agency": "NASA",
 		"type": "Mars Rover",
 		"description": "Operated nearly 15 years on Mars.",
-		"image": "assets/images/missions/opportunity.png"
+		"image": "assets/images/missions/opportunity.jpg"
 	},
 	{
 		"id": 9,
@@ -78,7 +78,7 @@
 		"agency": "NASA / ESA",
 		"type": "Space Telescope",
 		"description": "Revolutionized astronomy with deep-space imaging.",
-		"image": "assets/images/missions/hubble.png"
+		"image": "assets/images/missions/hubble.jpg"
 	},
 	{
 		"id": 10,
@@ -87,7 +87,7 @@
 		"agency": "NASA / ESA / CSA",
 		"type": "Space Telescope",
 		"description": "Observing the earliest galaxies in the universe.",
-		"image": "assets/images/missions/jwst.png"
+		"image": "assets/images/missions/jwst.jpg"
 	},
 	{
 		"id": 11,
@@ -96,7 +96,7 @@
 		"agency": "NASA / ESA",
 		"type": "Planetary Orbiter",
 		"description": "Studied Saturn and its moons in detail.",
-		"image": "assets/images/missions/cassini.png"
+		"image": "assets/images/missions/cassini.jpg"
 	},
 	{
 		"id": 12,
@@ -105,7 +105,7 @@
 		"agency": "NASA",
 		"type": "Space Probe",
 		"description": "First mission to Pluto and the Kuiper Belt.",
-		"image": "assets/images/missions/new-horizons.png"
+		"image": "assets/images/missions/new-horizons.jpg"
 	},
 	{
 		"id": 13,
@@ -113,8 +113,8 @@
 		"year": 2011,
 		"agency": "NASA",
 		"type": "Planetary Orbiter",
-		"description": "Studying Jupiter's composition and gravity.",
-		"image": "assets/images/missions/juno.png"
+		"description": "Studying Jupiter’s composition and gravity.",
+		"image": "assets/images/missions/juno.jpg"
 	},
 	{
 		"id": 14,
@@ -123,44 +123,150 @@
 		"agency": "NASA",
 		"type": "Mars Lander",
 		"description": "Delivered the first Mars rover, Sojourner.",
-		"image": "assets/images/missions/pathfinder.png"
+		"image": "assets/images/missions/pathfinder.jpg"
 	},
-
 	{
 		"id": 15,
+		"name": "Viking 1",
+		"year": 1975,
+		"agency": "NASA",
+		"type": "Mars Lander",
+		"description": "First successful Mars landing mission.",
+		"image": "assets/images/missions/viking-1.jpg"
+	},
+	{
+		"id": 16,
+		"name": "Viking 2",
+		"year": 1975,
+		"agency": "NASA",
+		"type": "Mars Lander",
+		"description": "Second successful Mars landing mission.",
+		"image": "assets/images/missions/viking-2.jpg"
+	},
+	{
+		"id": 17,
+		"name": "Lunar Reconnaissance Orbiter",
+		"year": 2009,
+		"agency": "NASA",
+		"type": "Lunar Orbiter",
+		"description": "Mapping the Moon in high detail.",
+		"image": "assets/images/missions/lro.jpg"
+	},
+	{
+		"id": 18,
+		"name": "Artemis I",
+		"year": 2022,
+		"agency": "NASA",
+		"type": "Lunar Mission",
+		"description": "Uncrewed test flight for future Moon missions.",
+		"image": "assets/images/missions/artemis-1.jpg"
+	},
+	{
+		"id": 19,
+		"name": "International Space Station",
+		"year": 1998,
+		"agency": "NASA / Roscosmos / ESA",
+		"type": "Space Station",
+		"description": "Permanent human presence in low Earth orbit.",
+		"image": "assets/images/missions/iss.jpg"
+	},
+	{
+		"id": 20,
+		"name": "Skylab",
+		"year": 1973,
+		"agency": "NASA",
+		"type": "Space Station",
+		"description": "First U.S. space station.",
+		"image": "assets/images/missions/skylab.jpg"
+	},
+	{
+		"id": 21,
+		"name": "Parker Solar Probe",
+		"year": 2018,
+		"agency": "NASA",
+		"type": "Solar Probe",
+		"description": "Studying the Sun’s corona up close.",
+		"image": "assets/images/missions/parker.jpg"
+	},
+	{
+		"id": 22,
+		"name": "OSIRIS-REx",
+		"year": 2016,
+		"agency": "NASA",
+		"type": "Asteroid Mission",
+		"description": "Returned samples from asteroid Bennu.",
+		"image": "assets/images/missions/osiris-rex.jpg"
+	},
+	{
+		"id": 23,
+		"name": "Kepler Space Telescope",
+		"year": 2009,
+		"agency": "NASA",
+		"type": "Space Telescope",
+		"description": "Discovered thousands of exoplanets.",
+		"image": "assets/images/missions/kepler.jpg"
+	},
+	{
+		"id": 24,
+		"name": "Chandra X-ray Observatory",
+		"year": 1999,
+		"agency": "NASA",
+		"type": "Space Telescope",
+		"description": "Observing high-energy regions of the universe.",
+		"image": "assets/images/missions/chandra.jpg"
+	},
+	{
+		"id": 25,
 		"name": "Galileo",
 		"year": 1989,
 		"agency": "NASA",
 		"type": "Planetary Orbiter",
 		"description": "Studied Jupiter and its moons.",
-		"image": "assets/images/missions/galileo.png"
+		"image": "assets/images/missions/galileo.jpg"
 	},
 	{
-		"id": 16,
+		"id": 26,
 		"name": "Magellan",
 		"year": 1989,
 		"agency": "NASA",
 		"type": "Planetary Orbiter",
 		"description": "Mapped Venus using radar.",
-		"image": "assets/images/missions/magellan.png"
+		"image": "assets/images/missions/magellan.jpg"
 	},
 	{
-		"id": 17,
+		"id": 27,
 		"name": "Hayabusa2",
 		"year": 2014,
 		"agency": "JAXA",
 		"type": "Asteroid Mission",
 		"description": "Returned samples from asteroid Ryugu.",
-		"image": "assets/images/missions/hayabusa2.png"
+		"image": "assets/images/missions/hayabusa2.jpg"
 	},
-
 	{
-		"id": 18,
+		"id": 28,
+		"name": "Tianwen-1",
+		"year": 2020,
+		"agency": "CNSA",
+		"type": "Mars Mission",
+		"description": "China’s first Mars orbiter and rover mission.",
+		"image": "assets/images/missions/tianwen-1.jpg"
+	},
+	{
+		"id": 29,
+		"name": "Chang’e 4",
+		"year": 2018,
+		"agency": "CNSA",
+		"type": "Lunar Mission",
+		"description": "First mission to land on the far side of the Moon.",
+		"image": "assets/images/missions/change-4.jpg"
+	},
+	{
+		"id": 30,
 		"name": "Sputnik 1",
 		"year": 1957,
 		"agency": "Soviet Union",
 		"type": "Satellite",
 		"description": "First artificial satellite launched into orbit.",
-		"image": "assets/images/missions/sputnik-1.png"
+		"image": "assets/images/missions/sputnik-1.jpg"
 	}
 ]

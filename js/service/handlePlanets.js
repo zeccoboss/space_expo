@@ -9,23 +9,24 @@ const getPlanets = async (path) => {
 };
 
 const renderPlanets = async () => {
-	const planetSlides = document.getElementById("planet-slides");
+	const planetSlides = document.getElementById("planet-content");
 
 	const planets = await getPlanets("../../data/planets.json");
 
 	planetSlides.innerHTML += planets
 		.map((planet, index) => {
 			return `
-			<div class="planet_card">
+			<div class="planet_card" id="planet-${`${planet.name}-${index}`}">
 				<figure class="planet_img_wrapper">
 					<img
 						src="${planet.image}"
 						alt="${planet.fact}"
 						srcset=""
-						id="planet-${planet.name + index}"
+						id="planet-${planet.name}"
 						class="planet_img"
 						height="250"
 						width="200"
+						loading="lazy"
 					/>
 					<figcaption class="planet_caption">${planet.fact}</figcaption>
 				</figure>
