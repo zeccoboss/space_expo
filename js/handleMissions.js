@@ -8,7 +8,7 @@ const getMissions = async (path) => {
 	}
 };
 
-const path = "../json/missions.json";
+const path = "../missions.json";
 
 const renderMissions = async () => {
 	const missionsWrapper = document.getElementById("mission-content");
