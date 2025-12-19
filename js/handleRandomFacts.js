@@ -1,6 +1,9 @@
 const getRandomFacts = async (path) => {
 	try {
 		const data = await fetch(path);
+		const qq = await fetch("../a.json");
+		console.log(qq);
+
 		return await data.json();
 	} catch (error) {
 		console.error(error);
@@ -18,7 +21,6 @@ const renderRandomFacts = async () => {
 	generateBtn.addEventListener("click", (_e) => {
 		factParagraph.innerHTML = ""; // Clear the p tag any time te button is clicked
 
-		// Initialize the index to - 0
 		let index = 0;
 
 		const factArray = Array.from(fact());
