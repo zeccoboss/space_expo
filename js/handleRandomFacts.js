@@ -1,6 +1,6 @@
-const getRandomFacts = async (path) => {
+const getRandomFacts = async () => {
 	try {
-		const data = await fetch("json/planets.json");
+		const data = await fetch("json/facts.json");
 		return await data.json();
 	} catch (error) {
 		console.error(error);
@@ -8,11 +8,11 @@ const getRandomFacts = async (path) => {
 	}
 };
 
-const renderRandomFacts = async (path) => {
+const renderRandomFacts = async () => {
 	const factParagraph = document.getElementById("fact-paragraph");
 	const generateBtn = document.getElementById("generate-fact-btn");
 
-	const facts = await getRandomFacts(path); // Array of facts fetched from json file
+	const facts = await getRandomFacts(); // Array of facts fetched from json file
 	const fact = () => facts[Math.floor(Math.random() * facts.length)]; // Get a single random fact anytime this function is called
 
 	generateBtn.addEventListener("click", (_e) => {

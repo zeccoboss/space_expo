@@ -4,6 +4,6 @@ import { renderRandomFacts } from "./handleRandomFacts.js";
 
 console.log("Space Exploration...");
 
-renderPlanets("json/planets.json"); // Render Planets
-renderRandomFacts("json/missions.json"); // Render random facts
-renderMissions("json/missions.json"); // Render missions
+renderPlanets(); // Render Planets
+renderRandomFacts(); // Render random facts
+renderMissions(); // Render missions

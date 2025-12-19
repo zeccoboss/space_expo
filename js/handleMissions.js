@@ -1,4 +1,4 @@
-const getMissions = async (path) => {
+const getMissions = async () => {
 	try {
 		const data = await fetch("json/missions.json");
 		return await data.json();
@@ -8,10 +8,10 @@ const getMissions = async (path) => {
 	}
 };
 
-const renderMissions = async (path) => {
+const renderMissions = async () => {
 	const missionsWrapper = document.getElementById("mission-content");
 
-	const missions = await getMissions(path);
+	const missions = await getMissions();
 
 	missionsWrapper.innerHTML += missions
 		.map((mission, index) => {
@@ -26,8 +26,8 @@ const renderMissions = async (path) => {
 						srcset=""
 						id="mission-${mission.name}"
 						class="mission_img"
-						height="250"
-						width="200"
+						height="150"
+						width="100"
 						loading="lazy"
 					/>
 					<figcaption class="mission_caption">
