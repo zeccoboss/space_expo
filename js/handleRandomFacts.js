@@ -1,7 +1,6 @@
 const getRandomFacts = async (path) => {
 	try {
 		const data = await fetch(path);
-
 		return await data.json();
 	} catch (error) {
 		console.error(error);

@@ -1,6 +1,10 @@
 const getMissions = async (path) => {
 	try {
+		console.log(await fetch("../a.json"));
+
 		const data = await fetch(path);
+		console.log(data);
+
 		return await data.json();
 	} catch (error) {
 		console.error(error);
