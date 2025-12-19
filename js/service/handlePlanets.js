@@ -11,7 +11,7 @@ const getPlanets = async (path) => {
 const renderPlanets = async () => {
 	const planetSlides = document.getElementById("planet-content");
 
-	const planets = await getPlanets("../../data/planets.json");
+	const planets = await getPlanets("/data/planets.json");
 
 	planetSlides.innerHTML += planets
 		.map((planet, index) => {
