@@ -8,7 +8,7 @@ renderPlanets(); // Render Planets
 renderRandomFacts(); // Render random facts
 renderMissions(); // Render missions
 
-const getMissions = async (path) => {
+async function getMissions(path) {
 	try {
 		const data = await fetch(path);
 		return await data.json();
@@ -16,7 +16,7 @@ const getMissions = async (path) => {
 		console.error(error);
 		return [];
 	}
-};
+}
 
 async function renderMissions() {
 	const missionsWrapper = document.getElementById("mission-content");
