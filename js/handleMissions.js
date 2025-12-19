@@ -8,12 +8,12 @@ const getMissions = async (path) => {
 	}
 };
 
-// const path = "../../data/missions.json";
+const path = "../../data/missions.json";
 
 const renderMissions = async () => {
 	const missionsWrapper = document.getElementById("mission-content");
 
-	const missions = await getMissions();
+	const missions = await getMissions(path);
 
 	missionsWrapper.innerHTML += missions
 		.map((mission, index) => {
