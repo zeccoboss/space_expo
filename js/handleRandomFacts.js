@@ -26,8 +26,6 @@ const renderRandomFacts = async (path) => {
 		const timer_id = setInterval(() => {
 			if (index !== factArray.length) {
 				factParagraph.innerHTML += factArray[index];
-				console.log(factArray[index]);
-
 				index++;
 			} else {
 				index = 0;
