@@ -1,6 +1,6 @@
 const getPlanets = async () => {
 	try {
-		const data = await fetch("/data/planets.json");
+		const data = await fetch("../../data/planets.json");
 		return await data.json();
 	} catch (error) {
 		console.error(error);

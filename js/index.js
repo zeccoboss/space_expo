@@ -1,6 +1,6 @@
-import { renderMissions } from "./service/handleMissions.js";
-import { renderPlanets } from "./service/handlePlanets.js";
-import { renderRandomFacts } from "./service/handleRandomFacts.js";
+import { renderMissions } from "./handleMissions.js";
+import { renderPlanets } from "./handlePlanets.js";
+import { renderRandomFacts } from "./handleRandomFacts.js";
 
 console.log("Space Exploration...");
 
