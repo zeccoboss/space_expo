@@ -465,24 +465,10 @@ a.hero_link:hover {
 	border-radius: 0.3rem;
 	box-shadow: 0px 0px 4px rgb(40, 40, 40);
 	padding: 1rem var(--padding) 2.5rem var(--padding);
-<<<<<<< HEAD
-	background-image: linear-gradient(
-		to right,
-		hsla(209, 27%, 29%, 0.11),
-		hsla(210, 94%, 13%, 0.07)
-	);
-	transition: all ease-in-out 0.5s;
-
-	& h3 {
-		margin: 1rem var(--margin) 0.7rem var(--margin);
-		font-size: 1.3rem;
-		color: hsl(from var(--heading-color) h s calc(l - 20));
-=======
 	background-color: var(--glass);
 
 	& h3 {
 		margin: 1rem var(--margin);
->>>>>>> 91865ddcb944b5cea7e746c6e2e946e6cfca9712
 	}
 
 	& small {
