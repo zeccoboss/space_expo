@@ -5,10 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Space Project</title>
 		<link rel="stylesheet" href="./css/style.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
 	</head>
 
 	<body>
@@ -27,11 +23,11 @@
 				<nav class="nav">
 					<ul class="nav_list">
 						<li class="nav_list_items">
-							<a href="#intro" class="nav_links">Intro</a>
+							<a href="#intro" class="nav_links">About</a>
 						</li>
 
 						<li class="nav_list_items">
-							<a href="#planet" class="nav_links">Planets</a>
+							<a href="#planets" class="nav_links">Planets</a>
 						</li>
 
 						<li class="nav_list_items">
@@ -97,7 +93,7 @@
 			<main id="main" class="main">
 				<article>
 					<section id="intro" class="intro_section">
-						<h2>Intro:</h2>
+						<h2>Intro</h2>
 
 						<p class="intro">
 							This site explores space missions, ans key discoveries that
@@ -107,7 +103,7 @@
 						</p>
 					</section>
 
-					<section id="planet" class="planet_slides">
+					<section id="planets" class="planet_slides">
 						<h2>Planets</h2>
 
 						<ul id="planet-content" class="planet_content">
@@ -122,21 +118,28 @@
 							<li id="fact-paragraph" class="fact_paragraph">
 								Neutron stars can spin up to 600 times per second.
 							</li>
-							<button id="generate-fact-btn" class="generate_fact_btn">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="16"
-									height="16"
-									fill="currentColor"
-									class="bi bi-stars"
-									viewBox="0 0 16 16"
-								>
-									<path
-										d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"
-									/>
-								</svg>
-							</button>
 						</ul>
+
+						<button id="generate-fact-btn" class="generate_fact_btn">
+							<span>Generate</span>
+
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								class="bi bi-stars"
+								viewBox="0 0 16 16"
+							>
+								<path
+									d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"
+								/>
+							</svg>
+						</button>
+
+						<p class="fact_info">
+							Click the button above to generate new fact!
+						</p>
 					</section>
 
 					<section id="missions" class="missions_section">
@@ -166,7 +169,51 @@
 			</main>
 
 			<footer id="foter" class="footer">
-				<h3>Footer</h3>
+				<div class="footer_content">
+					<section class="footer_description">
+						<h3>Space Expo.</h3>
+						<p>Exploring space missions, planets, and discoveries.</p>
+					</section>
+
+					<section class="footer_nav_section">
+						<h4>Explore</h4>
+
+						<ul class="footer_nav">
+							<li class="footer_nav_list_items">
+								<a href="#intro" class="nav_links">About</a>
+							</li>
+
+							<li class="footer_nav_list_items">
+								<a href="#planets" class="nav_links">Planets</a>
+							</li>
+
+							<li class="footer_nav_list_items">
+								<a href="#fact" class="nav_links">Facts</a>
+							</li>
+
+							<li class="footer_nav_list_items">
+								<a href="#missions" class="nav_links">Missions</a>
+							</li>
+
+							<li class="footer_nav_list_items">
+								<a href="#highlights" class="nav_links">Highlights</a>
+							</li>
+						</ul>
+					</section>
+
+					<section class="footer_section">
+						<h4>Credits</h4>
+						<p>Educational project built for learning purposes.</p>
+						<p>
+							Mission data inspired by public space research and
+							archives.
+						</p>
+					</section>
+				</div>
+
+				<div class="footer_bottom">
+					<p>© 2025 Space Expo. Built by Daniel Abraham.</p>
+				</div>
 			</footer>
 		</div>
 

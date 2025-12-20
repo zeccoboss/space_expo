@@ -7,13 +7,16 @@
 :root {
 	--bg: hsl(230, 35%, 7%);
 	--text: hsl(0, 0%, 100%);
-	--muted: hsl(0, 0%, 82%);
+	--muted: hsl(0, 3%, 72%);
 	--glass: rgba(255, 55, 255, 0.08);
 	--accent: #463cff;
+	--heading-color: hsl(195, 79%, 79%);
+	--stn-by-clr: hsl(from var(--accent) calc(h + 50) s calc(l + 30));
 
 	--padding: 0.5rem;
 	--margin: 0.5rem;
 
+	letter-spacing: 0.7px;
 	line-height: 1.5;
 }
 
@@ -27,7 +30,7 @@ html {
 }
 
 body {
-	font-family: "Orbitron", sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -71,16 +74,13 @@ ul {
 	z-index: 100;
 }
 
-.profile {
-	cursor: pointer;
-}
-
 .logo {
 	font-size: max(1.5rem, 2.5vw);
 	font-weight: 700;
 	letter-spacing: 2px;
 	margin-right: auto;
-	color: var(--accent);
+	text-shadow: 0px 0px 2px rgba(57, 57, 57, 0.44);
+	color: hsl(195, 79%, 79%);
 
 	& a {
 		text-decoration: none;
@@ -115,7 +115,7 @@ ul {
 .hero {
 	height: 90vh;
 	background-image: url("../assets/images/hero/hero_bg.png");
-	/* background-color: #0b0d17; */
+	background-repeat: no-repeat;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -138,54 +138,54 @@ ul {
 	text-align: center;
 
 	& p {
-		color: var(--muted);
+		color: hsl(from var(--muted) h s calc(l + 10));
 	}
 }
 
 .hero_heading {
-	color: var(--accent);
+	color: hsl(195, 79%, 79%);
 	font-size: 2.8rem;
-	text-shadow: 0px 1px 1px hsl(from var(--muted) h s calc(l - 30));
+	text-shadow: 0px 0px 2px rgba(57, 57, 57, 0.44);
 	margin: 1rem 0;
 }
 
 .hero_link {
-	background-color: var(--accent);
-	color: hsl(from var(--text) h s calc(l - 15));
+	background-color: hsl(from var(--heading-color) h s calc(l - 30));
+	color: rgb(41, 50, 64);
 	padding: 0.4rem 1.6rem;
 	border: none;
 	border-radius: 20px;
 	font-weight: bold;
 	cursor: pointer;
-	transition: 0.3s;
+	font-size: 0.9rem;
 	text-decoration: none;
 	display: inline-block;
 	margin: 2rem;
+	transition: all ease 0.5s;
+	box-shadow: 0px 0px 2px rgba(57, 57, 57, 0.44);
 }
 
 a.hero_link:hover {
-	background-color: hsl(from var(--accent) h s calc(l - 15));
-	color: var(--muted);
-}
-
-.planet_slides {
-	text-align: center;
-
-	& h2 {
-		margin: 2rem 0 1rem 0;
-	}
+	background-color: hsl(from var(--heading-color) h s calc(l - 20));
+	color: rgb(69, 68, 68);
 }
 
 .intro_section {
-	margin: 2rem 1rem;
+	margin: 5rem 1rem;
 	text-align: center;
 	padding: 5rem var(--padding);
 	box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.116);
-	background-color: rgba(0, 20, 39, 0.205);
+	background-image: linear-gradient(
+		to bottom,
+		rgba(0, 20, 39, 0.205),
+		rgba(14, 37, 59, 0.35),
+		rgba(12, 31, 48, 0.205)
+	);
 	border-radius: 0.6rem;
 
 	& h2 {
-		color: hsl(from var(--accent) h s calc(l - 15));
+		color: var(--heading-color);
+		font-size: 2rem;
 	}
 }
 
@@ -193,6 +193,19 @@ a.hero_link:hover {
 	margin: 2rem;
 	line-height: 2;
 	color: var(--muted);
+}
+
+.planet_slides {
+	text-align: center;
+	box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.144);
+	margin: 5rem 0;
+	padding: 1rem 0;
+
+	& h2 {
+		margin: 2rem 0 1rem 0;
+		color: var(--heading-color);
+		font-size: 2rem;
+	}
 }
 
 .planet_content {
@@ -227,7 +240,12 @@ a.hero_link:hover {
 	padding: 0 0 1rem 0;
 	box-shadow: 1px 2px 5px hsla(0, 0%, 7%, 0.226);
 	border-radius: 0.7rem;
-	background: var(--glass);
+	background-color: var(--glass);
+	transition: all 0.5s ease;
+
+	&:hover {
+		background-color: hsl(from var(--glass) h s calc(l - 25));
+	}
 }
 
 .planet_img_wrapper {
@@ -253,7 +271,7 @@ a.hero_link:hover {
 
 .planet_card h3 {
 	margin: 1rem var(--margin);
-	color: hsl(from var(--muted) h s calc(l + 7));
+	color: var(--heading-color);
 }
 
 .planet_fact {
@@ -261,9 +279,8 @@ a.hero_link:hover {
 }
 
 .random_fact_wrapper {
-	display: grid;
-	grid-template-rows: auto 1fr;
-	gap: 1rem;
+	display: flex;
+	gap: 0.8rem;
 	align-items: center;
 	flex-flow: column nowrap;
 	align-content: center;
@@ -272,14 +289,14 @@ a.hero_link:hover {
 	margin: 5rem 1rem;
 	border-radius: 10px;
 	background-color: rgba(0, 20, 39, 0.205);
+	text-align: center;
 	height: fit-content;
 }
 
 .random_fact_wrapper h3 {
-	margin: 1rem;
-	color: var(--accent);
-	text-align: center;
-	font-size: 1.5rem;
+	margin: 1.5rem var(--margin) 2rem var(--margin);
+	color: var(--heading-color);
+	font-size: 2rem;
 }
 
 .random_fact_content {
@@ -290,16 +307,22 @@ a.hero_link:hover {
 }
 
 .fact_paragraph {
-	margin: var(--margin) var(--margin) var(--margin) 1rem;
+	margin: var(--margin) 1rem;
 	flex-grow: 1;
 	word-spacing: 2px;
 	font-weight: 500;
 	word-wrap: break-word;
-	color: var(--muted);
+	color: hsl(from var(--muted) h s calc(l - 20));
+	font-weight: 400;
+	font-size: 0.9rem;
+	border-radius: 10px;
+	padding: var(--padding);
 }
 
 .generate_fact_btn {
-	height: fit-content;
+	display: flex;
+	align-content: center;
+	gap: 0.7rem;
 	border: none;
 	color: aliceblue;
 	padding: 0.5rem 1rem;
@@ -308,18 +331,26 @@ a.hero_link:hover {
 		hsl(244, 60%, 27%),
 		hsl(300, 64%, 23%)
 	);
-	box-shadow: 0px 1px 5px hsla(0, 0%, 100%, 0.158);
+	box-shadow: 0px 0px 2px hsla(0, 0%, 100%, 0.158);
 	border-radius: 0.5rem;
 	cursor: pointer;
-	transition: all ease-in 0.5s;
+	transition: all ease-in 0.5s, background-image linear 1s;
+	width: fit-content;
+	margin: 2rem var(--margin) 0 var(--margin);
+	padding: var(--padding) 1rem;
 
 	&:hover {
 		background-image: linear-gradient(
-			to right,
+			to bottom,
 			hsl(244, 60%, 20%),
 			hsl(300, 69%, 20%)
 		);
 	}
+}
+
+.fact_info {
+	font-size: 0.5rem;
+	color: hsl(from var(--muted) h s calc(l - 40));
 }
 
 .bi-stars {
@@ -328,10 +359,9 @@ a.hero_link:hover {
 
 .missions_section {
 	padding: 1rem 0;
-	box-shadow: 0px 0px 5px rgba(128, 128, 128, 0.144);
+	box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.144);
 	overflow: hidden;
-	/* position: relative; */
-	margin-bottom: 2rem;
+	margin: 5rem 0;
 }
 
 /* Not needed now || Might come in handy to add the see more mission feature */
@@ -347,7 +377,7 @@ a.hero_link:hover {
 .missions_section h2 {
 	margin: 2rem;
 	font-size: 2rem;
-	color: var(--accent);
+	color: var(--heading-color);
 	text-align: center;
 }
 
@@ -361,6 +391,13 @@ a.hero_link:hover {
 	background-color: rgba(128, 128, 128, 0.11);
 	border-radius: 0.5rem;
 	padding-bottom: 0.7rem;
+	transition: all ease-in-out 0.5s;
+
+	&:hover {
+		background-color: rgba(203, 203, 203, 0.11);
+		transform: translateY(-2px);
+		color: var(--muted);
+	}
 }
 
 .mission_card p {
@@ -401,12 +438,16 @@ a.hero_link:hover {
 .highlights {
 	color: var(--muted);
 	padding: 1rem var(--padding);
-	box-shadow: 0px 0px 5px hsla(0, 0%, 50%, 0.116);
+	box-shadow: 0px 0px 2px hsla(0, 0%, 50%, 0.116);
 	background-color: hsla(209, 100%, 8%, 0.205);
 	text-align: center;
+	margin: 5rem 0 1rem 0;
+	padding-bottom: 3rem;
 
 	& h2 {
 		margin: 2rem;
+		font-size: 2rem;
+		color: var(--heading-color);
 	}
 }
 
@@ -424,21 +465,93 @@ a.hero_link:hover {
 	border-radius: 0.3rem;
 	box-shadow: 0px 0px 4px rgb(40, 40, 40);
 	padding: 1rem var(--padding) 2.5rem var(--padding);
-	background-color: hsla(209, 27%, 29%, 0.339);
+	background-image: linear-gradient(
+		to right,
+		hsla(209, 27%, 29%, 0.11),
+		hsla(210, 94%, 13%, 0.07)
+	);
+	transition: all ease-in-out 0.5s;
 
-	& h4 {
-		margin: 1rem var(--margin);
+	& h3 {
+		margin: 1rem var(--margin) 0.7rem var(--margin);
+		font-size: 1.3rem;
+		color: hsl(from var(--heading-color) h s calc(l - 20));
 	}
 
 	& small {
 		margin: 1rem var(--margin);
+		color: var(--muted);
+	}
+
+	&:hover {
+		background-image: linear-gradient(
+			to top,
+			hsla(209, 27%, 29%, 0.064),
+			hsla(210, 94%, 13%, 0.034)
+		);
+		transform: scale(1.02);
 	}
 }
 
 .footer {
-	background-color: blue;
-	padding: var(--padding);
+	background-color: rgba(4, 4, 11, 0.058);
+	text-align: center;
+	box-shadow: 0px 0px 3px rgba(61, 60, 60, 0.082);
+	padding: 0 2rem 0 1rem;
 }
 
-/* @media screen and (max-width: 450px) {
-} */
+.site_footer {
+	background: #0b0f1a;
+	color: #ccc;
+	padding: 3rem 1rem 1.5rem;
+}
+
+.footer_content {
+	gap: 2rem;
+	max-width: 1100px;
+	margin: 1rem auto;
+	padding: 2rem 1rem;
+
+	background-color: hsla(0, 0%, 30%, 0.255);
+	& h3,
+	& h4 {
+		color: var(--heading-color);
+		margin: 0.3rem var(--margin);
+	}
+}
+
+.footer_description,
+.footer_nav_section,
+.footer_section {
+	margin: 2rem;
+	color: var(--muted);
+	line-height: 1.5;
+
+	& p {
+		font-size: 0.8rem;
+		margin: var(--margin);
+	}
+}
+
+.footer_nav {
+	list-style-type: none;
+
+	& p {
+		margin: 0.3rem;
+	}
+
+	& a {
+		font-size: max(0.8rem, 1vw);
+		text-decoration: underline;
+		text-underline-offset: 2px;
+
+		&:hover {
+			color: var(--accent);
+		}
+	}
+}
+
+.footer_bottom p {
+	letter-spacing: 2px;
+	margin: 2rem 0;
+}
