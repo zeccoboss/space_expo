@@ -426,7 +426,7 @@ a.hero_link:hover {
 	padding: 1rem var(--padding) 2.5rem var(--padding);
 	background-color: var(--glass);
 
-	& h4 {
+	& h3 {
 		margin: 1rem var(--margin);
 	}
 
