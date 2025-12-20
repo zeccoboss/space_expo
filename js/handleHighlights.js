@@ -18,7 +18,7 @@ const renderHighlights = async () => {
 		.map((hightlight, index) => {
 			return `
 				<li class="hightlight_card" id="hightlight-${`${hightlight.name}-${index}`}">
-					<h4 class="hightlight_title">${hightlight.title}</h4>
+					<h3 class="hightlight_title">${hightlight.title}</h3>
 					<small class="hightlight_content">${hightlight.text}</small>
 				</li>
 			`;
