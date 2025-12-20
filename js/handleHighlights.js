@@ -12,9 +12,9 @@ const renderHighlights = async () => {
 	const hightlightsWrapper = document.getElementById("highlights-content");
 
 	const groups = await getHighlights(); // Array of facts fetched from json file
-	const group = () => groups[Math.floor(Math.random() * groups.length)]; // Get a single random highlight group every page load | reload
+	const group = groups[Math.floor(Math.random() * groups.length)]; // Get a single random highlight group every page load | reload
 
-	hightlightsWrapper.innerHTML += group()
+	hightlightsWrapper.innerHTML += group
 		.map((hightlight, index) => {
 			return `
 				<li class="hightlight_card" id="hightlight-${`${hightlight.name}-${index}`}">
